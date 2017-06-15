@@ -33,7 +33,7 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 
 - If running via individual scenarios:
 
->Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.util.stepdefs
+>Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.stepdefs
 
 <h2>Template license</h2>
 
