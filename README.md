@@ -1,15 +1,15 @@
 A [Giter8][g8] template for ...!
 
-<h1>HMRC Scalatest-Testing-Template</h1>
+<h1>HMRC Cucumber-Testing-Template</h1>
 
 
-This template will generate a base project which makes use of the Scalatest framework
+This template will generate a base project which makes use of the Scalatest & Cucumber frameworks
 and includes the minimum required dependencies to function correctly.
 
 Packages and structure is also supplied in the hopes that it will help foster a standard way of organising a test project
 to make it easier for other testers to view other people's code.
 
-This template makes use of the Microservice Object for dependencies, no build.sbt or plugins.sbt exists.
+This template makes use of the build.sbt and plugins.sbt files.
 
 No enterprise dependencies are used so can be stored either in enterprise or in the open. (assuming of course no PI information is stored)
 
@@ -23,7 +23,7 @@ SBT version 13.13 or above is required
 
 Then enter the following:
 
->sbt new Stephen-Kam/testing-repository-template.g8
+>sbt new Stephen-Kam/cucumber-testing-repository-template.g8
 
 You'll be asked a number of questions on how to name various parts of the project
 
