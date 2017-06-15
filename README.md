@@ -27,6 +27,14 @@ Then enter the following:
 
 You'll be asked a number of questions on how to name various parts of the project
 
+<h3>Additional Notes</h3>
+
+If importing into IntelliJ, there are couple extra additional configurations that will need to be set before the tests can be ran:
+
+- If running via individual scenarios:
+
+>Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.util.stepdefs
+
 <h2>Template license</h2>
 
 Written in 2017 by Stephen Kam
