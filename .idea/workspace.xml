@@ -76,8 +76,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="327">
-                <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+              <first_editor relative-caret-position="270">
+                <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -185,7 +185,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="64" />
-    <option name="y" value="1076" />
+    <option name="y" value="-4" />
     <option name="width" value="1857" />
     <option name="height" value="1085" />
   </component>
@@ -1115,15 +1115,15 @@
       <workItem from="1497539696287" duration="3056000" />
       <workItem from="1497600202752" duration="3522000" />
       <workItem from="1497621790009" duration="174000" />
-      <workItem from="1497622077717" duration="1300000" />
+      <workItem from="1497622077717" duration="1414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20734000" />
+    <option name="totallyTimeSpent" value="20848000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="1076" width="1857" height="1085" extended-state="6" />
+    <frame x="64" y="-4" width="1857" height="1085" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1369,8 +1369,8 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="327">
-            <caret line="38" column="39" lean-forward="true" selection-start-line="38" selection-start-column="39" selection-end-line="38" selection-end-column="39" />
+          <first_editor relative-caret-position="270">
+            <caret line="39" column="24" lean-forward="true" selection-start-line="39" selection-start-column="24" selection-end-line="39" selection-end-column="24" />
             <folding />
           </first_editor>
           <second_editor />

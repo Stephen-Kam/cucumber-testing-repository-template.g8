@@ -36,14 +36,23 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 >Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.stepdefs
 
 <h3>Dependencies Used</h3>
->  "org.pegdown" % "pegdown" % "1.4.2" 
+
+>  "org.pegdown" % "pegdown" % "1.4.2"
+ 
 >   "org.scalactic" %% "scalactic" % "3.0.1" 
+
 >   "com.typesafe.play" %% "play-test" % PlayVersion.current
+
 >   "org.scalatest" %% "scalatest" % "3.0.1"
+
 >   "info.cukes" % "cucumber-scala_2.11" % "1.1.8"
+
 >   "info.cukes" % "cucumber-junit" % "1.1.8"
+
 >   "info.cukes" % "cucumber-picocontainer" % "1.1.8"
+
 >   "org.seleniumhq.selenium" % "selenium-java" % "2.53.1"
+
 >   "org.typelevel" %% "cats" % "0.9.0"
 
 <h2>Template license</h2>
