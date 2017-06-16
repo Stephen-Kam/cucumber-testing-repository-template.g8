@@ -38,7 +38,7 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 <h2>Template license</h2>
 
 Written in 2017 by Stephen Kam
-[other author/contributor lines as appropriate]
+with thanks to Craig Duncan.
 
 To the extent possible under law, the author(s) have dedicated all copyright and related
 and neighboring rights to this template to the public domain worldwide.

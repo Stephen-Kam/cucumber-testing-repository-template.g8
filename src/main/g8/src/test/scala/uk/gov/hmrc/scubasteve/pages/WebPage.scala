@@ -1,21 +1,20 @@
-package uk.gov.hmrc.$packageName$.pages.generic
+package uk.gov.hmrc.scubasteve.pages
 
 import org.openqa.selenium.{Keys, WebElement}
 import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-import uk.gov.hmrc.$packageName$.util.{ImplicitWebDriverSugar, NavigationSugar}
+import uk.gov.hmrc.scubasteve.stepdefs.Steps
 
 
 trait WebPage extends org.scalatest.selenium.Page
   with Matchers
-  with NavigationSugar
   with WebBrowser
   with Eventually
   with PatienceConfiguration
   with Assertions
-  with ImplicitWebDriverSugar {
+  with Steps {
 
   override val url = ""
 
@@ -42,7 +41,7 @@ trait WebPage extends org.scalatest.selenium.Page
   }
 
   def pressKeys(value: Keys): Unit = {
-    val e: WebElement = webDriver.switchTo.activeElement
+    val e: WebElement = getDriverUnsafe.switchTo.activeElement
     e.sendKeys(value)
   }
 
