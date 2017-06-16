@@ -15,7 +15,7 @@ No enterprise dependencies are used so can be stored either in enterprise or in 
 
 A chromedriver has also been included for both Windows and Linux/Apple, located in the drivers package
 
-<h2>How to use</h2>
+## How to use
 
 SBT version 13.13 or above is required
 
@@ -27,7 +27,7 @@ Then enter the following:
 
 You'll be asked a number of questions on how to name various parts of the project
 
-<h3>Additional Notes</h3>
+### Additional Notes
 
 If importing into IntelliJ, there are couple extra additional configurations that will need to be set before the tests can be ran:
 
