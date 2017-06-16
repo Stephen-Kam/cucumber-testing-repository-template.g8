@@ -20,7 +20,7 @@ trait Steps extends ScalaDsl with EN with Matchers {
     if (_driver.isEmpty) {
       val d = Driver.newWebDriver()
         // map the left to Nothing
-        .leftMap(e ⇒ sys.error(s"Could not find driver: $e"))
+        .leftMap(e ⇒ sys.error(s"Could not find driver: \$e"))
         // merge will merge Nothing and WebDriver to WebDriver since Nothing is a subtype of everything
         .merge
       d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)

@@ -17,7 +17,7 @@ object Driver {
       case Some("firefox") ⇒ Right(createFirefoxDriver())
       case Some("chrome") ⇒ Right(createChromeDriver())
       case Some("gecko") ⇒ Right(createGeckoDriver())
-      case Some(other) ⇒ Left(s"Unrecognised browser: $other")
+      case Some(other) ⇒ Left(s"Unrecognised browser: \$other")
       case None ⇒ Left("No browser set")
     }
 
