@@ -1,6 +1,6 @@
 A [Giter8][g8] template for ...!
 
-<h1>HMRC Cucumber-Testing-Template</h1>
+#HMRC Cucumber-Testing-Template
 
 
 This template will generate a base project which makes use of the Scalatest & Cucumber frameworks
