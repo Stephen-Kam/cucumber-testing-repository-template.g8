@@ -1,4 +1,4 @@
-package uk.gov.hmrc.scubasteve.stepdefs
+package uk.gov.hmrc.$packageName$.stepdefs
 
 import java.util.concurrent.TimeUnit
 
@@ -6,7 +6,7 @@ import cats.syntax.either._
 import cucumber.api.scala.{EN, ScalaDsl}
 import org.openqa.selenium.WebDriver
 import org.scalatest.Matchers
-import uk.gov.hmrc.scubasteve.util.Driver
+import uk.gov.hmrc.$packageName$.util.Driver
 
 trait Steps extends ScalaDsl with EN with Matchers {
 

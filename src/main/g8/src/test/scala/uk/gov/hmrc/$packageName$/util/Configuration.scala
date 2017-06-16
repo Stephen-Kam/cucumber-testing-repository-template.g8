@@ -1,4 +1,4 @@
-package uk.gov.hmrc.scubasteve.util
+package uk.gov.hmrc.$packageName$.util
 
 class Configuration(val url: String, val BROWSER: String = System.getProperty("browser", "firefox"))
 

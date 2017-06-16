@@ -1,11 +1,11 @@
-package uk.gov.hmrc.scubasteve.pages
+package uk.gov.hmrc.$packageName$.pages
 
 import org.openqa.selenium.{Keys, WebElement}
 import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-import uk.gov.hmrc.scubasteve.stepdefs.Steps
+import uk.gov.hmrc.$packageName$.stepdefs.Steps
 
 
 trait WebPage extends org.scalatest.selenium.Page

@@ -1,6 +1,6 @@
-package uk.gov.hmrc.scubasteve.pages
+package uk.gov.hmrc.$packageName$.pages
 
-import uk.gov.hmrc.scubasteve.stepdefs.Steps
+import uk.gov.hmrc.$packageName$.stepdefs.Steps
 
 object GoogleHomePage extends WebPage {
 

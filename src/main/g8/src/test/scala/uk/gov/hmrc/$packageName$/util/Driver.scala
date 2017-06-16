@@ -1,4 +1,4 @@
-package uk.gov.hmrc.scubasteve.util
+package uk.gov.hmrc.$packageName$.util
 
 import java.util.concurrent.TimeUnit
 

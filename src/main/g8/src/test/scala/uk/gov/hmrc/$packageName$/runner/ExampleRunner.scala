@@ -1,4 +1,4 @@
-package uk.gov.hmrc.scubasteve.runner
+package uk.gov.hmrc.$packageName$.runner
 
 import cucumber.api.CucumberOptions
 import cucumber.api.junit.Cucumber

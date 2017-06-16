@@ -1,6 +1,6 @@
-package uk.gov.hmrc.scubasteve.stepdefs
+package uk.gov.hmrc.$packageName$.stepdefs
 
-import uk.gov.hmrc.scubasteve.pages.GoogleHomePage
+import uk.gov.hmrc.$packageName$.pages.GoogleHomePage
 
 class MainSteps extends Steps {
 
