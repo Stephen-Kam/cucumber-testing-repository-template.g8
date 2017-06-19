@@ -9,6 +9,8 @@ object Environment extends Enumeration {
 
 object Configuration {
 
+  lazy val baseUrl: String = Configuration.settings.url
+
   lazy val environment: Environment.Name = {
     val environmentProperty = Option(System.getProperty("environment")).getOrElse("local").toLowerCase
     environmentProperty match {

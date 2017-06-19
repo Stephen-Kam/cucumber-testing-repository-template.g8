@@ -35,7 +35,7 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 
 >Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.stepdefs
 
-<h3>Dependencies Used</h3>
+### Dependencies Used
 
 >  "org.pegdown" % "pegdown" % "1.4.2"
  
