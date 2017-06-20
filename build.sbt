@@ -3,7 +3,7 @@
 // See http://www.foundweekends.org/giter8/testing.html#Using+the+Giter8Plugin for more details.
 lazy val root = (project in file(".")).
   settings(
-    name := "testing-repository-template",
+    name := "cucumber-testing-template",
     test in Test := {
       val _ = (g8Test in Test).toTask("").value
     },
