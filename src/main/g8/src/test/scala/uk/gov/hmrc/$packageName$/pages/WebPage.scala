@@ -41,7 +41,7 @@ trait WebPage extends org.scalatest.selenium.Page
   }
 
   def pressKeys(value: Keys): Unit = {
-    val e: WebElement = getDriverUnsafe.switchTo.activeElement
+    val e: WebElement = driver.switchTo.activeElement
     e.sendKeys(value)
   }
 
