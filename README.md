@@ -66,7 +66,7 @@ If importing into IntelliJ, there are couple extra additional configurations tha
     "org.typelevel" %% "cats" % "0.9.0"
 
 
-###What's still to do
+### What's still to do
 
 This template is in a working state, however there are some aspects that are still missing:
 
