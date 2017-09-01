@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.{ChromeDriver, ChromeOptions}
 import org.openqa.selenium.firefox.FirefoxDriver
 import org.openqa.selenium.remote.{BrowserType, DesiredCapabilities}
 
-object Driver {
+object SingletonDriver {
 
   private val systemProperties = System.getProperties
   private val os: String = Option(systemProperties.getProperty("os.name")).getOrElse(sys.error("Could not read OS name"))

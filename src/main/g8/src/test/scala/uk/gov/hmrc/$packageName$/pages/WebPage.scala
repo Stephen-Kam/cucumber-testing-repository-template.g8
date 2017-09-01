@@ -5,7 +5,6 @@ import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-import uk.gov.hmrc.$packageName$.stepdefs.Steps
 
 
 trait WebPage extends org.scalatest.selenium.Page
@@ -14,7 +13,7 @@ trait WebPage extends org.scalatest.selenium.Page
   with Eventually
   with PatienceConfiguration
   with Assertions
-  with Steps {
+  with Driver {
 
   override val url = ""
 
