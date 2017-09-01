@@ -3,7 +3,7 @@ A [Giter8][g8] template for ...!
 # HMRC Cucumber-Testing-Template
 
 
-##Why use the template
+## Why use the template
 
 This template will generate a base project which makes use of the Scalatest & Cucumber frameworks
 and includes the minimum required dependencies to function correctly.
@@ -19,7 +19,7 @@ A chromedriver has also been included for both Windows and Linux/Apple, located 
 
 A runTests shell script has been included which allows the running of any tests and takes a number of arguments
 
-###The Shell Script
+### The Shell Script
 
 In a terminal enter the command:
 
