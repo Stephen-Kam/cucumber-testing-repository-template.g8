@@ -23,11 +23,11 @@ A runTests shell script has been included which allows the running of any tests 
 
 In a terminal enter the command:
 
-./runTests {environment} {browser} [optional]{driver location} [optional]{tags}
+>./runTests {environment} {browser} [optional]{driver location} [optional]{tags}
 
 For example
 
-./runTests dev chrome /usr/local/bin/chromedriver runOnlyInDev
+>./runTests dev chrome /usr/local/bin/chromedriver runOnlyInDev
 
 Will run any tests with the @runOnlyInDev tag in the dev environment in Chrome
 
