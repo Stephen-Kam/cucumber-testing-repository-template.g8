@@ -14,7 +14,7 @@ object Configuration {
       case "qa"      ⇒ Environment.Qa
       case "dev"     ⇒ Environment.Dev
       case "staging" ⇒ Environment.Staging
-      case _         ⇒ throw new IllegalArgumentException(s"Environment '$environmentProperty' not known")
+      case _         ⇒ throw new IllegalArgumentException(s"Environment '\$environmentProperty' not known")
     }
   }
 
@@ -28,7 +28,7 @@ object Configuration {
 
       case Environment.Staging ⇒ ("https://www-staging.tax.service.gov.uk", "https://www-staging.tax.service.gov.uk")
 
-      case _                   ⇒ throw new IllegalArgumentException(s"Environment '$environment' not known")
+      case _                   ⇒ throw new IllegalArgumentException(s"Environment '\$environment' not known")
     }
   }
 }
