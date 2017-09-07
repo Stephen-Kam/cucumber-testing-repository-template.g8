@@ -33,6 +33,12 @@ Will run any tests with the @runOnlyInDev tag in the dev environment in Chrome
 
 If no driver location has been specified it will use the one in the drivers package based on your operating system
 
+### What's New
+
+- updated with new versions of dependencies
+- Firefox testing functionality included
+
+
 ## How to use
 
 SBT version 13.13 or above is required
@@ -56,14 +62,14 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 ### Dependencies Used
 
     "org.pegdown" % "pegdown" % "1.4.2"
-    "org.scalactic" %% "scalactic" % "3.0.1" 
     "com.typesafe.play" %% "play-test" % PlayVersion.current
-    "org.scalatest" %% "scalatest" % "3.0.1"
-    "info.cukes" % "cucumber-scala_2.11" % "1.1.8"
-    "info.cukes" % "cucumber-junit" % "1.1.8"
-    "info.cukes" % "cucumber-picocontainer" % "1.1.8"
-    "org.seleniumhq.selenium" % "selenium-java" % "2.53.1"
+    "org.scalatest" %% "scalatest" % "3.0.4"
+    "info.cukes" % "cucumber-scala_2.11" % "1.2.4"
+    "info.cukes" % "cucumber-junit" % "1.2.4"
+    "info.cukes" % "cucumber-picocontainer" % "1.2.4"
+    "org.seleniumhq.selenium" % "selenium-java" % "3.5.3"
     "org.typelevel" %% "cats" % "0.9.0"
+    "com.google.guava" % "guava" % "23.0"
 
 
 ### What's still to do
