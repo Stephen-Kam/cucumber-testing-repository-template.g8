@@ -1,11 +1,9 @@
 package uk.gov.hmrc.$packageName$.util
 
-import java.util.concurrent.TimeUnit
-
 import org.openqa.selenium.WebDriver
 import org.openqa.selenium.chrome.{ChromeDriver, ChromeOptions}
 import org.openqa.selenium.firefox.FirefoxDriver
-import org.openqa.selenium.remote.{BrowserType, DesiredCapabilities}
+import org.openqa.selenium.remote.DesiredCapabilities
 
 object SingletonDriver {
 
@@ -52,14 +50,6 @@ object SingletonDriver {
       driver
     }
 
-    def createFirefoxDriver(): WebDriver = {
-      val capabilities = DesiredCapabilities.firefox()
-      capabilities.setJavascriptEnabled(true)
-      capabilities.setBrowserName(BrowserType.FIREFOX)
-
-      new FirefoxDriver(capabilities)
-    }
-
     def createGeckoDriver(): WebDriver = {
       if (isMac) {
         systemProperties.setProperty("webdriver.gecko.driver", driverDirectory + "/geckodriver_mac")
@@ -70,16 +60,13 @@ object SingletonDriver {
       }
 
       val capabilities = DesiredCapabilities.firefox()
-      capabilities.setCapability("marionette", true)
-
       new FirefoxDriver(capabilities)
     }
 
     val environmentProperty = System.getProperty("browser")
     environmentProperty match {
-      case "firefox" ⇒ createFirefoxDriver()
+      case "firefox" ⇒ createGeckoDriver()
       case "chrome" ⇒ createChromeDriver()
-      case "gecko" ⇒ createGeckoDriver()
       case _ => throw new IllegalArgumentException(s"Browser type not recognised: -D\$environmentProperty")
     }
   }
@@ -87,7 +74,6 @@ object SingletonDriver {
   def initialiseBrowser() {
     instance = createBrowser()
     instance.manage().window().maximize()
-    //    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
     baseWindowHandle = instance.getWindowHandle
   }
 
