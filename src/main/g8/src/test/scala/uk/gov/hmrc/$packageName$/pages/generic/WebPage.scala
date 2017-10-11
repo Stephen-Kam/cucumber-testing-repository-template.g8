@@ -1,11 +1,14 @@
-package uk.gov.hmrc.$packageName$.pages
+package uk.gov.hmrc.$packageName$.pages.generic
+
+import java.io.{FileInputStream, IOException}
+import java.util.Properties
 
 import org.openqa.selenium.{Keys, WebElement}
 import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-
+import uk.gov.hmrc.$packageName$.util.Driver
 
 trait WebPage extends org.scalatest.selenium.Page
   with Matchers
@@ -15,7 +18,7 @@ trait WebPage extends org.scalatest.selenium.Page
   with Assertions
   with Driver {
 
-  override val url = ""
+  protected var url = ""
 
   override implicit val patienceConfig: PatienceConfig = PatienceConfig(timeout = scaled(Span(5, Seconds)), interval = scaled(Span(500, Millis)))
 
@@ -55,5 +58,33 @@ trait WebPage extends org.scalatest.selenium.Page
   def checkHeader(heading: String, text: String) = {
     find(cssSelector(heading)).exists(_.text == text)
   }
+
+  def navigateTo(): Unit = driver.navigate.to(s"\${Env.baseUrl}/\$url")
+
+  val fis = new FileInputStream("src/test/resources/message.properties")
+  val props: Properties = new Properties()
+  loadProperties(fis, props)
+
+  def loadProperties(aFis: FileInputStream, aProps: Properties) = {
+    try {aProps.load(aFis)}
+    catch {case e: Exception => println("Exception loading file")}
+    finally {
+      if (aFis != null) {
+        try {aFis.close()}
+        catch {case e: Exception => println("Exception on closing file")}
+      }
+    }
+  }
+
+  def getProperty(key: String, aProps: Properties): String = {
+    try {
+      val utf8Property = new String(aProps.getProperty(key).getBytes("ISO-8859-1"), "UTF-8")
+      utf8Property.replaceAll("''","'")
+    }
+    catch {case e: Exception => "Exception getting property"}
+  }
+
+  def gm(key: String): String = getProperty(key, props).replaceAll("''", "'")
+
 
 }

@@ -20,7 +20,7 @@ object Configuration {
 
   val (host, authHost) = {
     environment match {
-      case Environment.Local   ⇒ ("http://localhost:7000", "http://localhost:9949")
+      case Environment.Local   ⇒ ("https:", "")
 
       case Environment.Dev     ⇒ ("https://www-dev.tax.service.gov.uk", "https://www-dev.tax.service.gov.uk")
 

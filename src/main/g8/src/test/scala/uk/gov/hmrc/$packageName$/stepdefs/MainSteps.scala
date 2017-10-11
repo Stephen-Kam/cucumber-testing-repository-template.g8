@@ -1,11 +1,11 @@
 package uk.gov.hmrc.$packageName$.stepdefs
 
-import uk.gov.hmrc.$packageName$.pages.{Driver, GoogleHomePage}
+import uk.gov.hmrc.$packageName$.pages.{Driver, GovUkPage}
 
 class MainSteps extends Driver {
 
-  When("""^I navigate to the Google homepage\$""") { () =>
-    GoogleHomePage.navigateToGoogle()
+  When("""^I navigate to the GovUk homepage\$""") { () =>
+    GovUkPage.navigateTo()
 
   }
 }
