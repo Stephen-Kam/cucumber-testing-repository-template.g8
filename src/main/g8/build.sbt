@@ -24,7 +24,7 @@ libraryDependencies ++= Seq(
   "org.typelevel" %% "cats" % "0.9.0",
   "com.google.guava" % "guava" % "23.0")
 
-fork in Test := true
+fork in Test := false
 parallelExecution in Test := false
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-h", "target/test-reports/html-report")
 testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/test-reports")

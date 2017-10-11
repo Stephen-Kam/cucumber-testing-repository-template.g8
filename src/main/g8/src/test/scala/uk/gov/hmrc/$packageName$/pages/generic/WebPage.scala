@@ -1,6 +1,6 @@
 package uk.gov.hmrc.$packageName$.pages.generic
 
-import java.io.{FileInputStream, IOException}
+import java.io.FileInputStream
 import java.util.Properties
 
 import org.openqa.selenium.{Keys, WebElement}
@@ -8,17 +8,14 @@ import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-import uk.gov.hmrc.$packageName$.util.Driver
+import uk.gov.hmrc.cucumber.util.Driver
 
-trait WebPage extends org.scalatest.selenium.Page
-  with Matchers
+trait WebPage extends Matchers
   with WebBrowser
   with Eventually
   with PatienceConfiguration
   with Assertions
   with Driver {
-
-  protected var url = ""
 
   override implicit val patienceConfig: PatienceConfig = PatienceConfig(timeout = scaled(Span(5, Seconds)), interval = scaled(Span(500, Millis)))
 
@@ -59,7 +56,7 @@ trait WebPage extends org.scalatest.selenium.Page
     find(cssSelector(heading)).exists(_.text == text)
   }
 
-  def navigateTo(): Unit = driver.navigate.to(s"\${Env.baseUrl}/\$url")
+
 
   val fis = new FileInputStream("src/test/resources/message.properties")
   val props: Properties = new Properties()
