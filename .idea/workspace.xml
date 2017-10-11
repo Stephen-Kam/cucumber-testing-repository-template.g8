@@ -23,8 +23,8 @@
       <file leaf-file-name="MainSteps.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+            <state relative-caret-position="105">
+              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
               <folding>
                 <element signature="e#44#87#0" expanded="true" />
               </folding>
@@ -1280,12 +1280,12 @@
       <workItem from="1505487463845" duration="846000" />
       <workItem from="1507647447882" duration="64000" />
       <workItem from="1507734123504" duration="446000" />
-      <workItem from="1507734642414" duration="829000" />
+      <workItem from="1507734642414" duration="876000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50994000" />
+    <option name="totallyTimeSpent" value="51041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="1076" width="1857" height="1085" extended-state="6" />
@@ -1565,8 +1565,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="105">
+          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
           <folding>
             <element signature="e#44#87#0" expanded="true" />
           </folding>

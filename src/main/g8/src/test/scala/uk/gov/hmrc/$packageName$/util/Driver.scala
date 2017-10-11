@@ -14,6 +14,6 @@ trait Driver extends ScalaDsl with EN with Matchers {
     driver.manage().deleteAllCookies()
   }
 
-  def navigateTo(): Unit = driver.navigate.to(s"${Configuration.host}/$url")
+  def navigateTo(): Unit = driver.navigate.to(s"\${Configuration.host}/\$url")
 
 }
