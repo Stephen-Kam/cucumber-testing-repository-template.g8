@@ -8,7 +8,6 @@ import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
 import org.scalatest.time.{Millis, Seconds, Span}
-import uk.gov.hmrc.cucumber.util.Driver
 
 trait WebPage extends Matchers
   with WebBrowser
