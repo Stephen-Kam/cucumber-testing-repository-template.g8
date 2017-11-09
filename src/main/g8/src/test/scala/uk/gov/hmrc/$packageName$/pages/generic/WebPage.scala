@@ -3,7 +3,6 @@ package uk.gov.hmrc.$packageName$.pages.generic
 import java.io.FileInputStream
 import java.util.Properties
 
-import org.openqa.selenium.{Keys, WebElement}
 import org.scalatest._
 import org.scalatest.concurrent.{Eventually, PatienceConfiguration}
 import org.scalatest.selenium.WebBrowser
