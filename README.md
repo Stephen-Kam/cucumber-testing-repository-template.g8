@@ -19,20 +19,6 @@ A chromedriver has also been included for both Windows and Linux/Apple, located 
 
 A runTests shell script has been included which allows the running of any tests and takes a number of arguments
 
-### The Shell Script
-
-In a terminal enter the command:
-
->./runTests {environment} {browser} [optional]{driver location} [optional]{tags}
-
-For example
-
->./runTests dev chrome /usr/local/bin/chromedriver runOnlyInDev
-
-Will run any tests with the @runOnlyInDev tag in the dev environment in Chrome
-
-If no driver location has been specified it will use the one in the drivers package based on your operating system
-
 ### What's New
 
 - updated with new versions of dependencies
