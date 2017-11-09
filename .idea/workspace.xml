@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b37588f-9d53-4f52-b6f8-45d3a285a96f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root-build.iml" afterPath="$PROJECT_DIR$/.idea/modules/root-build.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/root.iml" afterPath="$PROJECT_DIR$/.idea/modules/root.iml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/Driver.scala" afterPath="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic/Driver.scala" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala" afterPath="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/project/project/target/" />
@@ -26,10 +26,22 @@
       <file leaf-file-name="MainSteps.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
+            <state relative-caret-position="165">
+              <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
               <folding>
-                <element signature="e#44#87#0" expanded="true" />
+                <element signature="e#44#92#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Driver.scala" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic/Driver.scala">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+              <folding>
+                <element signature="e#40#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,16 +67,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Example.feature" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/resources/features/Example.feature">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="WebPage.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic/WebPage.scala">
           <provider selected="true" editor-type-id="text-editor">
@@ -72,18 +74,6 @@
               <caret line="12" column="30" lean-forward="false" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
               <folding>
                 <element signature="e#49#79#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Driver.scala" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/Driver.scala">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#40#80#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -99,11 +89,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugins.sbt" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plugins.sbt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/g8/project/plugins.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="58" lean-forward="true" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
+            <state relative-caret-position="30">
+              <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.sbt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -125,8 +125,8 @@
       <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/g8/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
+            <state relative-caret-position="255">
+              <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
               <folding />
             </state>
           </provider>
@@ -195,9 +195,9 @@
         <option value="$PROJECT_DIR$/src/main/g8/src/test/resources/features/Example.feature" />
         <option value="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic/WebPage.scala" />
         <option value="$PROJECT_DIR$/src/main/g8/build.sbt" />
-        <option value="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala" />
         <option value="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/Driver.scala" />
         <option value="$PROJECT_DIR$/src/main/g8/project/plugins.sbt" />
+        <option value="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala" />
       </list>
     </option>
   </component>
@@ -208,10 +208,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="127" />
-    <option name="y" value="1137" />
-    <option name="width" value="1597" />
-    <option name="height" value="992" />
+    <option name="x" value="64" />
+    <option name="y" value="1076" />
+    <option name="width" value="1857" />
+    <option name="height" value="1085" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -232,8 +232,9 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -272,35 +273,157 @@
               <item name="g8" type="462c0819:PsiDirectoryNode" />
               <item name="project" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+              <item name="hmrc" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+              <item name="hmrc" type="462c0819:PsiDirectoryNode" />
+              <item name="$packageName$" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+              <item name="hmrc" type="462c0819:PsiDirectoryNode" />
+              <item name="$packageName$" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+              <item name="hmrc" type="462c0819:PsiDirectoryNode" />
+              <item name="$packageName$" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="generic" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="cucumber-testing-template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="cucumber-testing-repository-template.g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="g8" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="scala" type="462c0819:PsiDirectoryNode" />
+              <item name="uk" type="462c0819:PsiDirectoryNode" />
+              <item name="gov" type="462c0819:PsiDirectoryNode" />
+              <item name="hmrc" type="462c0819:PsiDirectoryNode" />
+              <item name="$packageName$" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../cucumber-test-two" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/main/g8/src/test/resources" />
-      <recent name="$PROJECT_DIR$/src/main/g8/drivers" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic" />
+      <recent name="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util" />
       <recent name="$PROJECT_DIR$/src/main/g8" />
-      <recent name="$PROJECT_DIR$/src/main/g8/src" />
-      <recent name="$PROJECT_DIR$/src/main/g8/project" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="uk.gov.hmrc.$packageName$.util" />
       <recent name="uk.gov.hmrc.$packageName$.runner" />
       <recent name="uk.gov.hmrc.$packageName$.pages.generic" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic" />
-      <recent name="$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util" />
+      <recent name="$PROJECT_DIR$/src/main/g8/src/test/resources" />
+      <recent name="$PROJECT_DIR$/src/main/g8/drivers" />
       <recent name="$PROJECT_DIR$/src/main/g8" />
+      <recent name="$PROJECT_DIR$/src/main/g8/src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -764,7 +887,7 @@
     </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1509029457595" />
+    <option name="lastUpdateTimestamp" value="1509030997829" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -837,12 +960,15 @@
       <workItem from="1507734123504" duration="446000" />
       <workItem from="1507734642414" duration="1192000" />
       <workItem from="1509029435741" duration="792000" />
-      <workItem from="1509030949573" duration="12000" />
+      <workItem from="1509030949573" duration="704000" />
+      <workItem from="1509035143787" duration="381000" />
+      <workItem from="1510222670805" duration="162000" />
+      <workItem from="1510222991002" duration="451000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52161000" />
+    <option name="totallyTimeSpent" value="53847000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="1076" width="1857" height="1085" extended-state="6" />
@@ -861,7 +987,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28062826" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31398562" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31785518" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="sbt-shell-toolwindow" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -897,8 +1023,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/SingletonDriver.scala" />
-    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/BasePage.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/tests/BaseFeatureSpec.scala" />
     <entry file="file://$PROJECT_DIR$/src/main/g8/default.properties">
       <provider selected="true" editor-type-id="text-editor">
@@ -956,13 +1080,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -1038,7 +1155,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="33" lean-forward="false" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1084,31 +1200,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/g8/build.sbt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="34" lean-forward="false" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="44" lean-forward="false" selection-start-line="7" selection-start-column="44" selection-end-line="7" selection-end-column="44" />
-          <folding>
-            <element signature="e#44#87#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/Driver.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#40#80#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1120,11 +1216,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" lean-forward="false" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/build.sbt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="59" selection-end-line="17" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/g8/project/plugins.sbt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="58" lean-forward="true" selection-start-line="0" selection-start-column="58" selection-end-line="0" selection-end-column="58" />
+        <state relative-caret-position="30">
+          <caret line="2" column="49" lean-forward="false" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/stepdefs/MainSteps.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding>
+            <element signature="e#44#92#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/util/Driver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/g8/src/test/scala/uk/gov/hmrc/$packageName$/pages/generic/Driver.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="23" lean-forward="false" selection-start-line="10" selection-start-column="23" selection-end-line="10" selection-end-column="23" />
+          <folding>
+            <element signature="e#40#80#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
