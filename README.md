@@ -15,15 +15,9 @@ This template makes use of the build.sbt and plugins.sbt files.
 
 No enterprise dependencies are used so can be stored either in enterprise or in the open. (assuming of course no PI information is stored)
 
-A chromedriver has also been included for both Windows and Linux/Apple, located in the drivers package
-
-A runTests shell script has been included which allows the running of any tests and takes a number of arguments
-
 ### What's New
 
 - updated with new versions of dependencies
-- Firefox testing functionality included
-
 
 ## How to use
 
@@ -47,21 +41,30 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 
 ### Dependencies Used
 
-    "org.pegdown" % "pegdown" % "1.4.2"
-    "com.typesafe.play" %% "play-test" % PlayVersion.current
-    "org.scalatest" %% "scalatest" % "3.0.4"
-    "info.cukes" % "cucumber-scala_2.11" % "1.2.4"
-    "info.cukes" % "cucumber-junit" % "1.2.4"
-    "info.cukes" % "cucumber-picocontainer" % "1.2.4"
-    "org.seleniumhq.selenium" % "selenium-java" % "3.5.3"
-    "org.typelevel" %% "cats" % "0.9.0"
+    "org.pegdown" % "pegdown" % "1.6.0",
+    "com.typesafe.play" %% "play-test" % PlayVersion.current,
+    "org.scalatest" %% "scalatest" % "3.0.4" excludeAll ExclusionRule(organization = "org.seleniumhq.selenium"),
+    "info.cukes" % "cucumber-scala_2.11" % "1.2.5",
+    "info.cukes" % "cucumber-junit" % "1.2.5",
+    "info.cukes" % "cucumber-picocontainer" % "1.2.5",
+    "org.seleniumhq.selenium" % "selenium-java" % "3.7.1",
+    "org.typelevel" %% "cats" % "0.9.0",
     "com.google.guava" % "guava" % "23.0"
 
+## WebDrivers
 
-### What's still to do
+It is recommended that you add the necessary drivers to your path to enable easy running of the tests
 
-This template is in a working state, however there are some aspects that are still missing:
+Follow these instructions to do just that:
 
-- Add in functionality to allow easy running of tests in other browsers
-- Add in extra drivers such as the Marionette/Gecko driver and drivers for other operating systems
+    sudo apt-get install unzip
+    
+    wget -N http://chromedriver.storage.googleapis.com/$chromeDriverVersion/chromedriver_linux64.zip
+    unzip chromedriver_linux64.zip
+    chmod +x chromedriver
+    
+    sudo mv -f chromedriver /usr/local/share/chromedriver
+    sudo ln -s /usr/local/share/chromedriver /usr/local/bin/chromedriver
+    sudo ln -s /usr/local/share/chromedriver /usr/bin/chromedriver
 
+This can also be done for the Geckodriver also

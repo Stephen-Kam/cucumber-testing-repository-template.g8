@@ -4,7 +4,7 @@ name := "$name$"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.11.8"
+scalaVersion := "2.11.11"
 
 val nexusPreviewHost: String = System.getProperty("hmrc.repo.host", "https://nexus-preview.tax.service.gov.uk")
 
@@ -13,14 +13,16 @@ resolvers ++= Seq("hmrc-snapshots" at nexusPreviewHost + "/content/repositories/
   "typesafe-releases" at nexusPreviewHost + "/content/repositories/typesafe-releases",
   Resolver.url("hmrc-sbt-plugin-releases", url("https://dl.bintray.com/hmrc/sbt-plugin-releases"))(Resolver.ivyStylePatterns))
 
+val cucumberVersion = "1.2.5"
+
 libraryDependencies ++= Seq(
-  "org.pegdown" % "pegdown" % "1.4.2" % "test",
+  "org.pegdown" % "pegdown" % "1.6.0",
   "com.typesafe.play" %% "play-test" % PlayVersion.current,
-  "org.scalatest" %% "scalatest" % "3.0.4",
-  "info.cukes" % "cucumber-scala_2.11" % "1.2.4",
-  "info.cukes" % "cucumber-junit" % "1.2.4",
-  "info.cukes" % "cucumber-picocontainer" % "1.2.4",
-  "org.seleniumhq.selenium" % "selenium-java" % "3.5.3",
+  "org.scalatest" %% "scalatest" % "3.0.4" excludeAll ExclusionRule(organization = "org.seleniumhq.selenium"),
+  "info.cukes" % "cucumber-scala_2.11" % cucumberVersion,
+  "info.cukes" % "cucumber-junit" % cucumberVersion,
+  "info.cukes" % "cucumber-picocontainer" % cucumberVersion,
+  "org.seleniumhq.selenium" % "selenium-java" % "3.7.1",
   "org.typelevel" %% "cats" % "0.9.0",
   "com.google.guava" % "guava" % "23.0")
 
