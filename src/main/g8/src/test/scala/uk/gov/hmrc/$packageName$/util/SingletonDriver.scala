@@ -28,7 +28,7 @@ object SingletonDriver {
       new ChromeDriver(options)
     }
 
-    val environmentProperty = System.getProperty("browser")
+    val environmentProperty = System.getProperty("browser", "chrome")
     environmentProperty match {
       case "firefox" ⇒ new FirefoxDriver(new FirefoxOptions())
       case "chrome" ⇒ createChromeDriver(false)
