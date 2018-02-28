@@ -17,7 +17,8 @@ No enterprise dependencies are used so can be stored either in enterprise or in 
 
 ### What's New
 
-- updated with new versions of dependencies
+- ??/02: updated with new versions of dependencies
+- 28/02: Refactored SingletonDriver
 
 ## How to use
 
