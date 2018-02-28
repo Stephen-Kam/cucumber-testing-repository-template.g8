@@ -13,7 +13,6 @@ object SingletonDriver {
   def getInstance(): Option[WebDriver] = {
     if (_driver.isEmpty) {
       val d = createBrowser()
-      d.manage().window().maximize()
       val _ = d.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS)
       _driver = Some(d)
     }
@@ -24,6 +23,7 @@ object SingletonDriver {
     def createChromeDriver(headless: Boolean): WebDriver = {
       val options = new ChromeOptions()
       options.addArguments("test-type")
+      options.addArguments("start-maximized")
       if (headless) options.addArguments("--disable-gpu", "--headless")
       new ChromeDriver(options)
     }
