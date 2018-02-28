@@ -9,7 +9,7 @@ trait Driver extends ScalaDsl with EN with Matchers {
 
   protected var url = ""
 
-  implicit val driver: WebDriver = SingletonDriver.getInstance()
+  implicit val driver: WebDriver = SingletonDriver.getInstance().get
 
   After { _ ⇒
     driver.manage().deleteAllCookies()
