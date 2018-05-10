@@ -1,12 +1,15 @@
 package uk.gov.hmrc.$packageName$.pages.generic
 
+import cucumber.api.scala.{EN, ScalaDsl}
+import org.openqa.selenium.support.ui.{ExpectedConditions, WebDriverWait}
 import org.openqa.selenium.{By, WebDriver}
-import org.scalatest.Matchers
+import org.scalatest.{Assertion, Matchers}
 import org.scalatest.selenium.WebBrowser
+import uk.gov.hmrc.$packageName$.util.{Configuration, SingletonDriver}
 
 trait Driver extends ScalaDsl with EN with Matchers with WebBrowser {
 
-  protected var url = ""
+  var url = ""
 
   implicit val driver: WebDriver = SingletonDriver.getInstance().get
 

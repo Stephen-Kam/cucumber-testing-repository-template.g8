@@ -1,4 +1,4 @@
-package uk.gov.hmrc.sdil.pages.generic
+package uk.gov.hmrc.$packageName$.pages.generic
 
 import java.io.FileInputStream
 import java.util.Properties
