@@ -7,6 +7,6 @@ object GovUkPage extends WebPage {
 
   url = "/www.gov.uk"
 
-  val header: String = gm("govuk.header")
+  val header: String = Some(gm("govuk.header"))
 
 }
