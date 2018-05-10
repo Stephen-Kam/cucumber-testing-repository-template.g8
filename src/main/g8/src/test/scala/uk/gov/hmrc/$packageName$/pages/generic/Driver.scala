@@ -19,10 +19,10 @@ trait Driver extends ScalaDsl with EN with Matchers with WebBrowser {
   def on(page: WebPage): Assertion = {
     val wait = new WebDriverWait(driver, 10)
     val _ = wait.until(ExpectedConditions.presenceOfElementLocated(By.tagName("a")))
-    assert(page.isCurrentPage, s"\n${page.url} was either not loaded or the header was incorrect. " +
-      s"\n${page.currentUrl} was loaded instead" +
-      s"\nExpected heading was: ${page.header.get}" +
-      s"\nActual heading was:   ${find(cssSelector("h1")).get.text}")
+    assert(page.isCurrentPage, s"\n\${page.url} was either not loaded or the header was incorrect. " +
+      s"\n\${page.currentUrl} was loaded instead" +
+      s"\nExpected heading was: \${page.header.get}" +
+      s"\nActual heading was:   \${find(cssSelector("h1")).get.text}")
   }
 
 }
