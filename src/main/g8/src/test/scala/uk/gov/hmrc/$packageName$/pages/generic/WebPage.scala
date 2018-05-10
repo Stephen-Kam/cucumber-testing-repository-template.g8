@@ -13,37 +13,17 @@ trait WebPage extends Matchers
   with Eventually
   with PatienceConfiguration
   with Assertions
-  with Driver {
+  with Driver
+  with MessageProperty {
 
   override implicit val patienceConfig: PatienceConfig = PatienceConfig(timeout = scaled(Span(5, Seconds)), interval = scaled(Span(500, Millis)))
 
-  def isCurrentPage: Boolean = false
-
-  //Message file functionality
-  val fis = new FileInputStream("src/test/resources/message.properties")
-  val props: Properties = new Properties()
-  loadProperties(fis, props)
-
-  def loadProperties(aFis: FileInputStream, aProps: Properties) = {
-    try {aProps.load(aFis)}
-    catch {case e: Exception => println("Exception loading file")}
-    finally {
-      if (aFis != null) {
-        try {aFis.close()}
-        catch {case e: Exception => println("Exception on closing file")}
-      }
-    }
+  def isCurrentPage: Boolean = {
+    val wait: WebDriverWait = new WebDriverWait(driver, 5)
+    wait.until(ExpectedConditions.urlContains(this.relativeUrl))
+    checkHeader(header.getOrElse("The website doesn't have an H1 header"))
   }
 
-  def getProperty(key: String, aProps: Properties): String = {
-    try {
-      val utf8Property = new String(aProps.getProperty(key).getBytes("ISO-8859-1"), "UTF-8")
-      utf8Property.replaceAll("''","'")
-    }
-    catch {case e: Exception => "Exception getting property"}
-  }
-
-  def gm(key: String): String = getProperty(key, props).replaceAll("''", "'")
-
+  def checkHeader(text: String): Boolean = find(cssSelector("h1")).exists(_.text == text)
 
 }

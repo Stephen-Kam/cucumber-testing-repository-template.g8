@@ -18,16 +18,13 @@ object Configuration {
     }
   }
 
-  val (host, authHost) = {
+  //Edit the VM properties with the following: -Denvironment={dev/qa/staging} to select your environment
+  val host = {
     environment match {
-      case Environment.Local   ⇒ ("https:", "")
-
-      case Environment.Dev     ⇒ ("https://www-dev.tax.service.gov.uk", "https://www-dev.tax.service.gov.uk")
-
-      case Environment.Qa      ⇒ ("https://www-qa.tax.service.gov.uk", "https://www-qa.tax.service.gov.uk")
-
-      case Environment.Staging ⇒ ("https://www-staging.tax.service.gov.uk", "https://www-staging.tax.service.gov.uk")
-
+      case Environment.Local   ⇒ "https:"
+      case Environment.Dev     ⇒ "https://www.dev.tax.service.gov.uk"
+      case Environment.Qa      ⇒ "https://www.qa.tax.service.gov.uk"
+      case Environment.Staging ⇒ "https://www.staging.tax.service.gov.uk"
       case _                   ⇒ throw new IllegalArgumentException(s"Environment '\$environment' not known")
     }
   }

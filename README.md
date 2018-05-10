@@ -19,8 +19,11 @@ No enterprise dependencies are used so can be stored either in enterprise or in 
 
 - ??/02: updated with new versions of dependencies
 - 28/02: Refactored SingletonDriver
+- 10/05: Updated old URL's, other minor refactoring
 
 ## How to use
+
+### Do not clone this project!
 
 SBT version 13.13 or above is required
 
