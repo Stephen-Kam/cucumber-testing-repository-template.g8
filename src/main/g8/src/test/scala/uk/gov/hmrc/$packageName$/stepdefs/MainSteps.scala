@@ -9,7 +9,7 @@ class MainSteps extends Driver {
     GovUkPage.navigateTo()
   }
 
-  Then("""^I will be on the GovUk homepage$"""){ () =>
+  Then("""^I will be on the GovUk homepage\$"""){ () =>
     on(GovUkPage)
   }
 }
