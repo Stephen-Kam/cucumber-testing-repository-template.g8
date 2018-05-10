@@ -7,6 +7,9 @@ class MainSteps extends Driver {
 
   When("""^I navigate to the GovUk homepage\$""") { () =>
     GovUkPage.navigateTo()
+  }
 
+  Then("""^I will be on the GovUk homepage$"""){ () =>
+    on(GovUkPage)
   }
 }
