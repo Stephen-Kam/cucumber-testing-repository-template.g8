@@ -22,9 +22,9 @@ object Configuration {
   val host = {
     environment match {
       case Environment.Local   ⇒ "https:"
-      case Environment.Dev     ⇒ "https://www.dev.tax.service.gov.uk"
-      case Environment.Qa      ⇒ "https://www.qa.tax.service.gov.uk"
-      case Environment.Staging ⇒ "https://www.staging.tax.service.gov.uk"
+      case Environment.Dev     ⇒ "https:"
+      case Environment.Qa      ⇒ "https:"
+      case Environment.Staging ⇒ "https:"
       case _                   ⇒ throw new IllegalArgumentException(s"Environment '\$environment' not known")
     }
   }
