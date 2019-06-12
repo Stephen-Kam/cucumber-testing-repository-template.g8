@@ -2,10 +2,10 @@ package $packageName$.pages
 
 import $packageName$.pages.generic.BasePage
 
-object GovUkPage extends WebPage {
+object GovUkPage extends BasePage {
 
-  url = "/www.gov.uk"
+  val url = "/www.gov.uk"
 
-  override val header = Some(gm("govuk.header"))
+  val header: String = gm("govuk.header")
 
 }
