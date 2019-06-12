@@ -1,6 +1,17 @@
 A [Giter8][g8] template for ...!
 
-# HMRC Cucumber-Testing-Template
+# Cucumber-Testing-Template
+
+## Contents
+
+* [Why use the template](#why-use-the-template)
+* [What's New](#whats-new)
+* [How to use](#how-to-use)
+    * [Do not clone this project](#do-not-clone-this-project)
+    * [Additional Notes](#additional-notes)
+    * [Dependencies Used](#dependencies-used)
+    
+* [Webdrivers](#webdrivers)
 
 
 ## Why use the template
@@ -13,7 +24,7 @@ to make it easier for other testers to view other people's code.
 
 This template makes use of the build.sbt and plugins.sbt files.
 
-No enterprise dependencies are used so can be stored either in enterprise or in the open. (assuming of course no PI information is stored)
+No enterprise dependencies are used
 
 ### What's New
 
@@ -36,13 +47,19 @@ Then enter the following:
 
 You'll be asked a number of questions on how to name various parts of the project
 
+If imported correctly run:
+   
+   > sbt run
+   
+and the one example test should pass
+
 ### Additional Notes
 
 If importing into IntelliJ, there are couple extra additional configurations that will need to be set before the tests can be ran:
 
 - If running via individual scenarios:
 
->Cucumber Java default configuration, set the glue to uk.gov.hmrc.$packageName$.stepdefs
+>Cucumber Java default configuration, set the glue to $packageName$.stepdefs
 
 ### Dependencies Used
 
