@@ -20,6 +20,7 @@ No enterprise dependencies are used so can be stored either in enterprise or in 
 - ??/02: updated with new versions of dependencies
 - 28/02: Refactored SingletonDriver
 - 10/05: Updated old URL's, other minor refactoring
+- 12/06/19: Updated dependencies and package structure
 
 ## How to use
 
@@ -45,15 +46,14 @@ If importing into IntelliJ, there are couple extra additional configurations tha
 
 ### Dependencies Used
 
-    "org.pegdown" % "pegdown" % "1.6.0",
-    "com.typesafe.play" %% "play-test" % PlayVersion.current,
-    "org.scalatest" %% "scalatest" % "3.0.4" excludeAll ExclusionRule(organization = "org.seleniumhq.selenium"),
-    "info.cukes" % "cucumber-scala_2.11" % "1.2.5",
-    "info.cukes" % "cucumber-junit" % "1.2.5",
-    "info.cukes" % "cucumber-picocontainer" % "1.2.5",
-    "org.seleniumhq.selenium" % "selenium-java" % "3.7.1",
-    "org.typelevel" %% "cats" % "0.9.0",
-    "com.google.guava" % "guava" % "23.0"
+      "com.typesafe.play"       %% "play-test"              % PlayVersion.current,
+      "org.scalatest"           %% "scalatest"              % "3.2.0-SNAP10",
+      "org.scalacheck"          %% "scalacheck"             % "1.14.0",
+      "io.cucumber"             %% "cucumber-scala"         % "4.3.1",
+      "io.cucumber"             % "cucumber-junit"          % "4.3.1",
+      "io.cucumber"             % "cucumber-picocontainer"  % "4.3.1",
+      "org.seleniumhq.selenium" % "selenium-java"           % "3.141.59",
+      "com.google.guava"        % "guava"                   % "27.1-jre"
 
 ## WebDrivers
 
