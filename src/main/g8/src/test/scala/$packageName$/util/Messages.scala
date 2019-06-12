@@ -1,9 +1,9 @@
-package uk.gov.hmrc.$packageName$.pages.generic
+package $packageName$.utils
 
 import java.io.FileInputStream
 import java.util.Properties
 
-trait MessageProperty {
+trait Messages {
 
   val fis = new FileInputStream("src/test/resources/message.properties")
   val props: Properties = new Properties()

@@ -4,23 +4,17 @@ name := "$name$"
 
 version := "0.0.1-SNAPSHOT"
 
-scalaVersion := "2.11.11"
+scalaVersion := "2.12.8"
 
-val cucumberVersion = "1.2.5"
+val cucumberVersion = "4.3.1"
 
 libraryDependencies ++= Seq(
-  "org.pegdown" % "pegdown" % "1.6.0",
-  "com.typesafe.play" %% "play-test" % PlayVersion.current,
-  "org.scalatest" %% "scalatest" % "3.0.4" excludeAll ExclusionRule(organization = "org.seleniumhq.selenium"),
-  "info.cukes" % "cucumber-scala_2.11" % cucumberVersion,
-  "info.cukes" % "cucumber-junit" % cucumberVersion,
-  "info.cukes" % "cucumber-picocontainer" % cucumberVersion,
-  "org.seleniumhq.selenium" % "selenium-java" % "3.7.1",
-  "org.typelevel" %% "cats" % "0.9.0",
-  "com.google.guava" % "guava" % "23.0")
-
-fork in Test := false
-parallelExecution in Test := false
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-h", "target/test-reports/html-report")
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-u", "target/test-reports")
-testOptions in Test += Tests.Argument(TestFrameworks.ScalaTest, "-oDF")
+  "com.typesafe.play"       %% "play-test"              % PlayVersion.current,
+  "org.scalatest"           %% "scalatest"              % "3.2.0-SNAP10",
+  "org.scalacheck"          %% "scalacheck"             % "1.14.0",
+  "io.cucumber"             %% "cucumber-scala"         % cucumberVersion,
+  "io.cucumber"             % "cucumber-junit"          % cucumberVersion,
+  "io.cucumber"             % "cucumber-picocontainer"  % cucumberVersion,
+  "org.seleniumhq.selenium" % "selenium-java"           % "3.141.59",
+  "com.google.guava"        % "guava"                   % "27.1-jre"
+)
